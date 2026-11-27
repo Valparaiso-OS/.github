@@ -20,6 +20,14 @@ For VM testing, start with 8 GiB of RAM and an 80 GiB blank virtual disk. To try
 - **Valpo Files, Pak Center, and Valpo Analytics** for browsing files, exploring IPS packages, and opening sample workbooks.
 - **Valpo Code and Valpo Containers** for development, browsing Podman images, and viewing the host’s illumos zone inventory.
 
+## Desktop and command line
+
+The graphical installer and desktop apps cover most everyday tasks. If you prefer a shell, open Konsole. Valparaiso retains the OpenIndiana/illumos command-line environment, including native tools for IPS packages, ZFS, and zones.
+
+![Fastfetch in Konsole showing OpenIndiana, SunOS, and KDE Plasma system details](https://valparaiso-os.tech/assets/fastfetch.webp)
+
+*Actual screenshot of Fastfetch in Konsole on an installed Valparaiso QA VM.*
+
 ## Current QA status
 
 The November 26, 2026 image passed offline live-boot checks, including Containers background startup and listing the native global zone. Fresh-install testing and non-global zone lifecycle testing remain open for this exact image. Physical hardware support varies, and Secure Boot compatibility remains unverified for this preview.
