@@ -20,6 +20,12 @@ For VM testing, start with 8 GiB of RAM and an 80 GiB blank virtual disk. To try
 - **Valpo Files, Pak Center, and Valpo Analytics** for browsing files, exploring IPS packages, and opening sample workbooks.
 - **Valpo Code and Valpo Containers** for development, browsing Podman images, and viewing the host’s illumos zone inventory.
 
+## What sets Valparaiso apart
+
+Valparaiso builds on OpenIndiana and illumos, carrying forward native ZFS storage, zones, and IPS package management. It brings those foundations into a KDE Plasma desktop with a graphical live installer, Valpo apps, and on-device writing help in LibreOffice Writer.
+
+Valpo Containers brings the host’s illumos zone inventory and Podman workloads in a bundled Fedora guest into one desktop app. Valparaiso also configures illumos process hardening during installation and is testing signed UEFI boot in controlled QA configurations.
+
 ## Desktop and command line
 
 The graphical installer and desktop apps cover most everyday tasks. If you prefer a shell, open Konsole. Valparaiso retains the OpenIndiana/illumos command-line environment, including native tools for IPS packages, ZFS, and zones.
