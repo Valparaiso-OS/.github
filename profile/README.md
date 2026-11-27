@@ -49,6 +49,8 @@ The November 26, 2026 image passed offline live-boot checks, including Container
 - **TPM 2.0.** Firmware communication was demonstrated in a test VM. The tested OpenIndiana guest exposed no usable TPM CRB or TIS device interface. Measured boot and TPM-sealed disk unlock remain open. See the [security roadmap](https://github.com/Valparaiso-OS/Valparaiso/blob/main/docs/security-roadmap.md).
 - **Post-quantum boot verification.** A standalone UEFI QA probe verified an ML-DSA-65 boot manifest and rejected a modified manifest and a changed configuration file. Full boot-chain enforcement remains experimental. See the [ML-DSA-65 prototype](https://github.com/Valparaiso-OS/Valparaiso/blob/main/docs/secure-boot.md#ml-dsa-65-boot-manifest-prototype).
 
+- **Containers LAN publishing demo.** The Fedora guest uses restricted QEMU user networking. HTTP listens only on loopback. LAN publishing requires a separate TLS 1.3 listener on an explicitly approved interface. The desktop administrator supplies a certificate trusted by clients and valid for the host address, plus its matching private key.
+
 ## Project documentation
 
 The technical documents below require access to the Valparaiso repository. The [public installation guide](https://valparaiso-os.tech/docs/) is available to everyone.
